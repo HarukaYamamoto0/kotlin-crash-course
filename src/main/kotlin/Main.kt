@@ -10,5 +10,5 @@ fun main() {
     y/=2
     y%=3
     y++
-    println(x + y)
+    println("${x != y} ${x === y} ${x >= y}")
 }
