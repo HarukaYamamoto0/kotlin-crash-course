@@ -2,13 +2,8 @@ package com.harukadev
 
 fun main() {
     val x = 52
-    var y = 32
-    y++
-    y+=1
-    y--
-    y*=1
-    y/=2
-    y%=3
-    y++
-    println("${x != y} ${x === y} ${x >= y}")
+    val y = 32
+    val areBothEven = ((x and 2) == 0) || ((y or 2) == 0)
+    val bitOperator = x shr 2
+    println("$areBothEven, $bitOperator")
 }
