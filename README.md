@@ -3,7 +3,7 @@ Repository with the codes and projects developed during the **"Full 2025 Kotlin 
 
 [![Kotlin Version](https://img.shields.io/badge/Kotlin-2.1.10-blue.svg)](https://kotlinlang.org)
 
-<img src="./assets/console-input.svg" width="500" height="500">
+<img src="./assets/console-input.svg" width="400" height="400">
 
 ## 📚 Description
 This repository contains:
@@ -51,4 +51,4 @@ Contributions are welcome! Feel free to:
 - Suggest improvements
 - Submit pull requests
 
-Made with ❤️ by [HarukaYamamoto0] during [Philipp Lackner's](https://www.youtube.com/@PhilippLackner) amazing course
+Made with ❤️ by HarukaYamamoto0 during [Philipp Lackner's](https://www.youtube.com/@PhilippLackner) amazing course
