@@ -1,9 +1,17 @@
 package com.harukadev
 
+import kotlin.system.exitProcess
+
 fun main() {
-    val x = 52
-    val y = 32
-    val areBothEven = ((x and 2) == 0) || ((y or 2) == 0)
-    val bitOperator = x shr 2
-    println("$areBothEven, $bitOperator")
+    print("Please enter a number: ")
+    val input = readln()
+    val inputAsInt = input.toIntOrNull()
+
+    if (inputAsInt === null) {
+        println("Please enter a valid number")
+        exitProcess(0)
+    }
+
+    val isEven = inputAsInt % 2 == 0
+    println(isEven)
 }
