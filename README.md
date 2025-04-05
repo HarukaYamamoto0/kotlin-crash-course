@@ -3,7 +3,7 @@ Repository with the codes and projects developed during the **"Full 2025 Kotlin 
 
 [![Kotlin Version](https://img.shields.io/badge/Kotlin-2.1.10-blue.svg)](https://kotlinlang.org)
 
-![image](./assets/console-input.svg)
+<img src="./assets/console-input.svg" width="500" height="500">
 
 ## 📚 Description
 This repository contains:
