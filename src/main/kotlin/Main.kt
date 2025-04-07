@@ -7,13 +7,12 @@ fun main() {
     val input = readln()
     val inputAsInt = input.toIntOrNull()
 
-    if (inputAsInt != null){
-        val output = when {
+        val output = when(inputAsInt) {
+            null-> "Dude, enter a valid number!"
             inputAsInt % 2 == 0 -> "The number is even"
             inputAsInt < 10 -> "The number is odd and less than 10"
             else ->"The number is odd and least 11"
         }
 
         println(output)
-    } else println("Dude, enter a valid number!")
 }
