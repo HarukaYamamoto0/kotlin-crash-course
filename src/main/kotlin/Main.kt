@@ -3,15 +3,18 @@ package com.harukadev
 fun main() {
     print("Please enter a number: ")
     val input = readln()
-    val inputAsInt = input.toIntOrNull()
+    val inputAsInt = try {
+        input.toInt()
+    } catch (e: NumberFormatException) {
+        -1
+    }
 
-    if (inputAsInt !== null) {
-        val output = when {
-            inputAsInt % 2 == 0 -> "The number is even"
-            inputAsInt < 10 -> "The number is odd and less than 10"
-            else -> "The number is odd and least 11"
-        }
+    val output = when(inputAsInt) {
+        3 -> "The number is three!"
+        5 -> "The number is five!"
+        in 1..10 -> "The number is between 10 and 20"
+        else -> "I have no idea to print"
+    }
 
-        println(output)
-    } else println("Dude, enter a valid number!")
+    println(output)
 }
