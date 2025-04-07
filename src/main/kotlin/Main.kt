@@ -3,31 +3,17 @@ package com.harukadev
 import kotlin.system.exitProcess
 
 fun main() {
-    var inputAsInt: Int?
+    print("Please enter a number: ")
+    val input = readln()
+    val inputAsInt = input.toIntOrNull()
 
-    do {
-        print("Please enter a number: ")
-        val input = readln()
-        inputAsInt = input.toIntOrNull()
-
-        if (inputAsInt === null) {
-            println("Please enter a valid number")
-            continue
+    if (inputAsInt != null){
+        val output = when {
+            inputAsInt % 2 == 0 -> "The number is even"
+            inputAsInt < 10 -> "The number is odd and less than 10"
+            else ->"The number is odd and least 11"
         }
 
-        val isEven = inputAsInt % 2 == 0
-
-        if (isEven) println("Yes the number $inputAsInt is even.")
-        else println("No, the number 1 is not even.")
-
-        println("Do you want to test again?")
-        val choice = readln()
-
-        if (arrayOf("Y", "y", "Yes", "yes", "YES").contains(choice)) {
-            inputAsInt = null
-            continue
-        }
-        if (arrayOf("N", "n", "No", "no", "NO").contains(choice)) exitProcess(0)
-
-    } while (inputAsInt === null)
+        println(output)
+    } else println("Dude, enter a valid number!")
 }
