@@ -5,14 +5,14 @@ fun main() {
     val input = readln()
     val inputAsInt = try {
         input.toInt()
-    } catch (e: NumberFormatException) {
+    } catch (_: NumberFormatException) {
         -1
     }
 
-    val output = when(inputAsInt) {
+    val output = when (inputAsInt) {
         3 -> "The number is three!"
         5 -> "The number is five!"
-        in 1..10 -> "The number is between 10 and 20"
+        in 10..20 -> "The number is between 10 and 20"
         else -> "I have no idea to print"
     }
 
