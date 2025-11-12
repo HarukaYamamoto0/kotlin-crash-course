@@ -1,20 +1,20 @@
 package com.harukadev
 
 fun main() {
-    print("Please enter a number: ")
+    /*
+    Interesting fact: intArray creates an immutable array, but when you use the +5 operator on it, it creates a
+    new array by adding the old value to the new one.
+     */
+    val favoriteNumbers = intArrayOf(1, 2, 3, 4, 5)
+
+    print("Tell me the index of your favorite number: ")
     val input = readln()
-    val inputAsInt = try {
-        input.toInt()
-    } catch (_: NumberFormatException) {
-        -1
-    }
+    val inputAsInteger = input.toIntOrNull()
 
-    val output = when (inputAsInt) {
-        3 -> "The number is three!"
-        5 -> "The number is five!"
-        in 10..20 -> "The number is between 10 and 20"
-        else -> "I have no idea to print"
+    if (inputAsInteger != null && inputAsInteger in 0..favoriteNumbers.lastIndex) {
+        val favoriteNumber = favoriteNumbers.getOrNull(inputAsInteger)
+        println("Your number favorite is $favoriteNumber!")
+    } else {
+        println("Favorite number not found")
     }
-
-    println(output)
 }
