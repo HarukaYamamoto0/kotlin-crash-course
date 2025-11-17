@@ -23,12 +23,14 @@ fun maxArea(firstRectangle: Rectangle, secondRectangle: Rectangle): Float {
     return maxOf(firstRectangle.area, secondRectangle.area)
 }
 
-data class Rectangle(val width: Float, val height: Float) : Shape() {
+data class Rectangle(val width: Float, val height: Float) : Shape {
+    override var counter = 0
     override val diagonal = sqrt(width * width + height * height)
     override val area = width * height
 }
 
-data class Circle(val radius: Float) : Shape() {
+data class Circle(val radius: Float) : Shape {
+    override var counter = 0
     override val area = radius * radius * PI.toFloat()
     override val diagonal = area * radius
 }

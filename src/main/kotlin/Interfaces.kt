@@ -15,15 +15,27 @@ fun main() {
     println(rectangle.counter)
     rectangle.inc()
     println(rectangle.counter)
+
+    printShapes(rectangle, circle)
+
     exitProcess(0)
 }
 
-// Abstract classes are like drafts of a class.
-abstract class Shape {
-    abstract val area: Float
-    abstract val diagonal: Float // Don't take the name seriously.
+fun printShapes(vararg shapes: Shape) {
+    for (shape in shapes) {
+        val output = when (shape) {
+            is Circle -> "Is Circle"
+            is Rectangle -> "Is Rectangle"
+        }
+        println(output)
+    }
+}
 
-    var counter = 0
+// Abstract classes are like drafts of a class.
+sealed interface Shape {
+    val area: Float
+    val diagonal: Float // Don't take the name seriously.
+    var counter: Int
 
     fun inc() {
         counter++
