@@ -26,6 +26,7 @@ fun printShapes(vararg shapes: Shape) {
         val output = when (shape) {
             is Circle -> "Is Circle"
             is Rectangle -> "Is Rectangle"
+            is FixSizeSquare -> "Is fix size Square"
         }
         println(output)
     }
