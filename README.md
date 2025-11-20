@@ -1,9 +1,8 @@
 # 🚀 Curso Kotlin Crash Course 2025 - Philipp Lackner
 Repository with the codes and projects developed during the **"Full 2025 Kotlin Crash Course For Beginners"** taught by Philipp Lackner.
 
-[![Kotlin Version](https://img.shields.io/badge/Kotlin-2.1.10-blue.svg)](https://kotlinlang.org)
-
-<img src="./assets/console-input.svg" width="400" height="400">
+## Example code
+![Example of code](./assets/example.svg)
 
 ## 📚 Description
 This repository contains:
@@ -44,11 +43,5 @@ git clone https://github.com/HarukaYamamoto0/kotlin-crash-course.git
 - [Course Playlist](https://youtube.com/playlist?list=PLQkwcJG4YTCSpJ2NLhDTHhi6XBNfk9WiC)
 - [Official Kotlin Documentation](https://kotlinlang.org/docs/home.html)
 - [Kotlin Koans](https://play.kotlinlang.org/koans)
-
-## 🤝 Contribution
-Contributions are welcome! Feel free to:
-- Report issues
-- Suggest improvements
-- Submit pull requests
 
 Made with ❤️ by HarukaYamamoto0 during [Philipp Lackner's](https://www.youtube.com/@PhilippLackner) amazing course
